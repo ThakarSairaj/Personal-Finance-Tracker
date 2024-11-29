@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Roboto;
+    src: url('fonts/Roboto/Roboto-Black.ttf') format('truetype');
+    font-weight: 900; /* Black */
+    font-style: normal;
+}
+@font-face {
+    font-family: Roboto;
+    src: url('fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+@font-face {
+    font-family: Roboto;
+    src: url('fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Light background color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.log {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Increased width for a more spacious layout */
+    margin: 0 auto; /* Centering */
+    padding: 20px; /* Padding inside the form */
+    border: 1px solid #ccc; /* Softer border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: white; /* White background for the form */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.log_lbl {
+    font-size: 24px; /* Larger label font */
+    font-weight: 700; /* Bold for emphasis */
+    margin-bottom: 20px; /* Space below the label */
+    text-align: center; /* Centered text */
+}
+
+.in_log, #pass {
+    padding: 12px; /* Increased padding for better touch target */
+    margin: 10px 0; /* Vertical spacing */
+    font-family: 'Roboto', normal;
+    font-weight: 500;
+    border: 1px solid #ccc; /* Border for input fields */
+    border-radius: 4px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.in_log:focus, #pass:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.log_btn {
+    font-family: 'Roboto', normal;
+    font-weight: 500;
+    padding: 10px; /* Padding for button */
+    margin: 10px 0; /* Vertical spacing */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.log_btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+input[type='checkbox'] {
+    accent-color: rgba(17, 58, 208, 0.871); /* Custom accent color */
+}
+
+/* To clear the eye button in the password field in Microsoft Edge */
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear {
+    display: none;
+}
+
+.check_box {
+    margin: 10px 0; /* Vertical spacing */
+    font-size: 14px; /* Slightly smaller font for checkbox label */
+}
+.check_lbl {
+    margin: 10px 0; /* Add vertical spacing */
+    font-size: 14px; /* Slightly smaller font */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center align items */
+}
+
+.check_box {
+    margin-right: 5px; /* Space between checkbox and label */
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    .log {
+        width: 90%; /* Make form width responsive */
+    }
+}
+
+

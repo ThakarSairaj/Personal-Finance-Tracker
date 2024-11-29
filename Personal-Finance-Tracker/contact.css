@@ -1,0 +1,176 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+ul.nav-links {
+    gap: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+
+/* Login and Signup Links */
+.auth-links {
+    list-style: none;
+    display: flex;
+}
+
+.auth-links li {
+    margin-left: 20px;
+}
+
+.auth-links li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    border: 1px solid #007bff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-links li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 100px 50px;
+    text-align: left;
+}
+
+.contact-section h2 {
+    font-size: 32px; /* Larger font for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #007bff;
+    text-align: center;
+     /* Optional: Change heading color */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Column layout for the form */
+    align-items: center; /* Center the form items */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Full width */
+    max-width: 400px; /* Limit the width */
+    padding: 10px; /* Padding inside the input */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size for inputs */
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.contact-form button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Success Message */
+.success_msg {
+    color: green;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add this to underline the active page link */
+.nav-links li a.active {
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none; /* Hides elements with this class */
+}

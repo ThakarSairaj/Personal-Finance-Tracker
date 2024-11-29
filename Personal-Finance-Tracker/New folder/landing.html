@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker Landing Page</title>
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo Section -->
+            <div class="logo">
+                <img src="logo.png" alt="Finance Tracker Logo">
+                <h1>Finance Tracker</h1>
+            </div>
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Login and Sign-up Links -->
+            <ul class="auth-links">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section with Image -->
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>Manage Your Expenses Effortlessly</h2>
+                <p>Track your personal finances, manage your budget, and plan your future with ease using Finance Tracker.</p>
+                <a href="signup.html" class="btn">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="hero-image.png" alt="Finance Management Image">
+            </div>
+        </section>
+    </main>
+
+    <!-- About Us Section -->
+    <section id="aboutus" class="section about-section">
+        <h2>About Us</h2>
+        <p>We provide a robust platform to help you track, manage, and optimize your personal expenses. Stay financially organized with our user-friendly interface and advanced tools.</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section contact-section">
+        <h2>Contact Us</h2>
+        <form action="contact.php" method="post" class="contact-form">
+            <input type="text" placeholder="Your Name" name="name" required>
+            <input type="email" placeholder="Your Email" name="email" required>
+            <textarea placeholder="Your Message" name="message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Finance Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>

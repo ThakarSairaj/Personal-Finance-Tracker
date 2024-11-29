@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Monthly Expense - Finance Tracker</title>
+    <link rel="stylesheet" href="home_main.css">
+   
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Finance Tracker</h1>
+            </div>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="home_main.php">Dashboard</a></li>
+                    <li><a href="add_expense.php">Add Expense</a></li>
+                    <li><a href="credit_bal.html">Credit Amount</a></li>
+                    <li><a href="monthlyexp.html">Monthly Expense</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="form_section">
+            <h2>Add Monthly Expense</h2>
+            <form action="monthlyexp.php" method="POST">
+                <div class="monthly-expense-card">
+                    <div class="form_group expense-input">
+                        <input type="number" id="ME" name="me" placeholder="Monthly Expense (₹)" step="0.01" required>
+                        <input type="text" id="source" name="source" placeholder="Source" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="notes">Notes:</label>
+                        <textarea id="notes" name="notes" rows="4"></textarea>
+                    </div>
+                    <div class="form_group">
+                        <button type="submit" id="add-expense-btn">Add Expense</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+   
+    <footer>
+        <p>&copy; 2024 Finance Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>

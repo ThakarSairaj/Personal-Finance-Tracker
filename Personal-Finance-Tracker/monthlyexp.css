@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.nav_links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav_links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav_links a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form_section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.monthly-expense-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.expense-input {
+    display: flex;
+    gap: 10px; /* Space between input fields */
+    margin-bottom: 20px; /* Space below the input fields */
+}
+
+.expense-input input {
+    flex: 1; /* Allow inputs to take equal space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-expense-btn {
+    align-self: flex-start; /* Align button to the left */
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-expense-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.form_group {
+    margin-bottom: 15px;
+}
+
+.form_group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form_group input,
+.form_group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
