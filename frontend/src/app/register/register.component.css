@@ -1,0 +1,48 @@
+.card {
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 25px;
+}
+
+h2 {
+  color: #2c3e50;
+  font-size: 26px;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #444;
+  font-size: 15px;
+}
+
+.form-control {
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.form-check-label a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.text-center a {
+  color: #007bff;
+  font-size: 14px;
+}
+
+.text-center a:hover {
+  text-decoration: underline;
+}

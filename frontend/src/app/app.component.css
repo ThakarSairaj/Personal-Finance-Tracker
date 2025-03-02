@@ -1,0 +1,57 @@
+/* Ensure the full page stretches and footer stays at the bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar styling */
+.navbar {
+    background: #0079f1;
+}
+
+/* Centering the content and adding a background color */
+.main-content {
+    flex-grow: 1;
+    background: #34495E; /* Background color */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Footer should stay at the bottom */
+footer {
+    background: #1A1A1A;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Footer links styling */
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #0960bd;
+    border: none;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
